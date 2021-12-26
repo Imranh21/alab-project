@@ -1,0 +1,43 @@
+.card {
+    position: relative;
+    padding: 30px 20px;
+    border-radius: 10px;
+    /* border: 1px solid rgb(255, 220, 220); */
+    /* box-shadow: 0px 4px 25px rgba(0,0,0,0.12); */
+    border: 1px solid rgb(240, 240, 240);
+}
+.content .title {
+    font-size: 1.4rem;
+    color: rgb(48, 48, 48);
+    margin-top: 10px;
+}
+.content .des {
+    font-size: 0.8rem;
+    color: rgb(97, 97, 97);
+    padding-bottom: 30px;
+}
+.content .date {
+    position: absolute;
+    
+    bottom: 10px;
+    left: 20px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50px;
+    color: rgb(136, 136, 136);
+}
+
+.actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-flex;
+}
+
+.actions > * {
+    color: rgb(112, 112, 112);
+    font-size: 18px;
+    margin: 0 2px;
+    cursor: pointer;
+}

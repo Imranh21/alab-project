@@ -1,0 +1,21 @@
+.address {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+.item {
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+    margin: 5px;
+    color: rgb(99, 99, 99);
+}
+
+@media only screen and (max-width: 600px){
+    .address {
+        flex-direction: column;
+    }
+    .item {
+        margin: 5px 0;
+    }
+}

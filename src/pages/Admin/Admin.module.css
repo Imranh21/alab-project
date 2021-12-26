@@ -1,0 +1,31 @@
+.adminContainer {
+    width: 100%;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+.head .addBtn{
+    text-decoration: none;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 226, 226);
+    background: rgb(255, 32, 32);
+    cursor: pointer;
+    font-weight: bold;
+}
+@media only screen and (max-width: 600px){
+    .wrapper {
+        width: 90%;
+        grid-template-columns: 1fr;
+        
+    }
+}

@@ -1,0 +1,15 @@
+.listContainer {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+@media only screen and (max-width: 600px){
+    .listContainer {
+        grid-template-columns: 1fr;
+        
+    }
+}

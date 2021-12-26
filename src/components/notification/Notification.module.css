@@ -1,0 +1,10 @@
+.notif {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    display: inline;
+    padding: 10px 20px;
+    background: #cdffb0;
+    color: rgb(0, 110, 24);
+    border-radius: 10px;
+}

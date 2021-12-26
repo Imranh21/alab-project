@@ -1,0 +1,46 @@
+.container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+.container > nav {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+ul > li {
+    padding: 10px;
+}
+li > .active {
+    text-decoration: none;
+    color: rgb(255, 59, 59);
+    font-size: 1rem;
+}
+li > .inactive {
+    text-decoration: none;
+    color: rgb(61, 61, 61);
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .container > nav {
+      width: 90%;
+    }
+  }
