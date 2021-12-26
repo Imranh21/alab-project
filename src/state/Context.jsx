@@ -37,7 +37,6 @@ const Context = ({ children }) => {
   //will check the credientials if matches then credentails will stored, change isAdmin value to true, and navigate the route
   const loginUser = (val) => {
     if(val.email === user.email && val.password === user.password){
-      setUser(val);
       setIsAdmin(true);
       navigate("/admin");
     } else {
