@@ -23,6 +23,7 @@ const Context = ({ children }) => {
   // this function is responsible for open/close the modal
   const modalHandler = status => {
     setIsModal(status)
+    SetIsEdit(false)
   }
 
   //this function will notify us with message  
