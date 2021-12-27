@@ -77,7 +77,7 @@ const Context = ({ children }) => {
           el.des = value.des;
         }
       });
-      notify(true, "Blog updated")
+      notify("Blog updated")
       setIsEdit(false);
       modalHandler(false)
     } else {
