@@ -27,11 +27,11 @@ const Context = ({ children }) => {
   }
 
   //this function will notify us with message  
-  const notify = (status, msg) => {
-    setIsNotif(status)
+  const notify = (msg) => {
+    setIsNotif(true)
     setNotifMsg(msg)
     setTimeout(() => {
-      setIsNotif(!status)
+      setIsNotif(false)
     }, 2000)
   }
 
@@ -40,8 +40,9 @@ const Context = ({ children }) => {
     if(val.email === user.email && val.password === user.password){
       setIsAdmin(true);
       navigate("/admin");
+      notify("Welcome back!")
     } else {
-      notify(true, "User not found")
+      notify("User not found")
     }
     
   };
@@ -51,9 +52,9 @@ const Context = ({ children }) => {
     if(blog.title && blog.des !== ""){
       setBlogs([blog, ...blogs]);
       modalHandler(false)
-      notify(true, "Blog published")
+      notify("Blog published")
     } else {
-      notify(true, "Fields cannot be empty")
+      notify("Fields cannot be empty")
     }
     
   };
@@ -80,7 +81,7 @@ const Context = ({ children }) => {
       setIsEdit(false);
       modalHandler(false)
     } else {
-      notify(true, "Fields cannot be empty")
+      notify("Fields cannot be empty")
     }
     
     
